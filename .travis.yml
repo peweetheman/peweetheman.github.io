@@ -4,6 +4,8 @@ git:
 node_js:
   - "node"
 install:       npm install
+ports:
+  127.0.0.1
 script:
   - npm test
   - gulp
