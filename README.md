@@ -1,4 +1,4 @@
-# [Patrick Phillips Website](https://patrickphillips.tech)
+# [Patrick Phillips Website](https://patrickphillips.page)
 
 ## Bio
 
