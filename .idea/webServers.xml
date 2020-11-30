@@ -2,14 +2,6 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="c28c4678-f97a-4f7e-a3f0-f462a48e5969" name="patrick website" url="https://patrickphillips.tech">
-        <fileTransfer host="ftp.patrickphillips.tech" port="21" rootFolder="/domains/patrickphillips.tech/public_html">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-          <option name="port" value="21" />
-        </fileTransfer>
-      </webServer>
       <webServer id="60888015-ca48-46e7-bf05-e3f7f880eac3" name="localhost" url="http://localhost/website">
         <fileTransfer port="0" mountedRoot="C:\Users\Patrick\Documents\Coding_projects\PhpstormProjects\website" accessType="MOUNT" />
       </webServer>
