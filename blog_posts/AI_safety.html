@@ -20,149 +20,150 @@
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="../index.html">Patrick Phillips</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../Papers.html">Papers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../project-portfolio.html">Project Portfolio</a>
-                </li>
-                <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Blog
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                        <a class="dropdown-item" href="../Philosophy-Blog.html">Philosophy Blog</a>
-                        <a class="dropdown-item active" href="../Personal-Blog.html">Personal Blog</a>
-                        <a class="dropdown-item" href="Blogpost__welcome__.html">Welcome to the Blog!</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOtherPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Other Pages
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                        <a class="dropdown-item" href="../button.html">button</a></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Page Content -->
-<div class="container">
-
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">AI Safety
-        <small>by Patrick Phillips</small>
-    </h1>
-
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="../index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item">
-            <a href="../Personal-Blog.html">Personal Blog</a>
-        </li>
-        <li class="breadcrumb-item active">
-            AI Safety
-        </li>
-    </ol>
-
-    <div class="row">
-
-        <!-- Post Content Column -->
-        <div class="col-lg-8">
-
-            <!-- Preview Image -->
-            <img class="img-fluid rounded" src="../images/artificial-intelligence-nonsense.png" alt="">
-
-            <hr>
-
-            <!-- Date/Time -->
-            <p>Posted on February 4, 2019</p>
-
-            <hr>
-            <!-- Post Content -->
-
-            <p class="lead">There are many pressing concerns in AI safety. Some concerns are more reasonable than others. Some concerns are more of an existential threat than others. None have easy answers (if they did, well we wouldn’t be concerned would we?).</p>
-            <p>This article will explore a laundry list of these concerns. I won’t suggest many solutions, and if I do, none of these solutions will be by any means complete. For the most part, it is my opinion that to solve these dilemmas we need to do more research, and in particular, rigorously theoretical research that focuses on bounds for the likelihood of catastrophic outcomes.. Here we go!</p>
-
-            <p>Existential risk in this context is the vague theory that an artificial general intelligence (AGI)
-                could become powerful enough and misguided enough to result in human extinction.
-                Here is one plausible set of steps for this type of threat to become reality:</p>
-            <blockquote class="blockquote">
-            <p class="mb-0">(1) the AGI develops values that stand opposed to the human race, and <br> (2) the AGI has the power and capacity to act on these values, overcoming any human intervention.
-            </p>
-            </blockquote>
-            <p>The first condition (1) seems plausible. It may be difficult to instill prescribed values into AGI systems (though giving objectives/values seems trivial in most cases), or more likely, malicious actors may choose to intentionally gives values to AGI systems that are not in line with the interest of society at large. The second condition (2) seems less likely to be realized, though also plausible. One particular concern here is that of recursive intelligence growth. Consider an AGI agent that is able to control its own intelligence or create new intelligent agents. If we humans are able to build an agent more intelligent than ourselves, than it would seem logical or at least possible that this agent would be able to build another agent even more intelligent than itself. A chain of intelligent agents, each a little bit more powerful than its predecessor could be created in this recursive manner. If these incredibly intelligent agents also had values not aligned with ours, and the ability to act in the world without constraint, there may be real existential risk. And it’s worth noting that even if these outcomes are unlikely, as long as there is any reasonable chance that they could manifest themselves, we probably ought to take them seriously (since the outcome could be so infinitely bad).</p>
-            <p>Besides existential risk, there are many more immediate challenges and threats posed by artificial intelligence including deep fakes, autonomous weapons, social manipulation, systematic discrimination, and AI transparency. Not all of these challenges will be discussed here. The first one of these that I do think is worth discussing is AI transparency. There are at least two distinct transparency problems that AI faces. As Mind AI puts it: “The first deals with public perception and understanding of how AI works, and the second has to do with how much developers actually understand about their own AI” [1]. In regards to the first issue, of course the public will not entirely have the time or means to learn how AI works, and it should certainly not be their responsibility to do so. </p>
-            <p>This leaves a real dilemma. AI is going to make some of the most significant societal decisions on topics ranging from legal responsibility to medical diagnoses to running yellow lights. If the general public is unable to understand how these decisions are made then how can they be expected to trust them? Especially when these systems might make decisions that seem incorrect, discriminatory, or have immediate negative consequences, it seems almost impossible to trust them if we cannot understand why they are making the decisions that they do. This problem of public understanding and perception could be solved to some extent if AI developers were at least able to explain the fundamental question of why AI agents make the decisions that they do. </p>
-            <p>The state of the art in AI right now is ‘deep learning’ which consists of massive neural networks that are much the opposite of transparent. It seems like the best way to understand what causes a neural network to make a decision is to try varying the input and see how the output varies. This is really the last resort to understand any sort of black box algorithm (though its not a black box algorithm at all, really just some multivariate calculus which is the most confusing part; how could we not understand something we have defined so precisely?) I think there are many different approaches to overcoming this transparency issue. The most easy one, and I think perhaps the best, is just to get better at living with uncertainty. Another possible solution is to abandon neural nets (fat chance, they’re the best we got) for some other more transparent machine learning algorithms. I do also think there is some potential for really just getting better at understanding what the neural network is doing. What this might look like technically is viewing neural nets as doing causal inference (like in a probabilistic graphical model) which is a much more transparent process whereby you can directly identify which particular things caused which other particular things and to what extent.</p>
-            <p>The next threat that I will discuss is that of deep fakes. Already when your browsing through Facebook or YouTube or a friend sends you an image or video with something truly remarkable, there is a sort of skepticism that we get (or at least I do). Maybe we’re not always sure how a video or photo could be faked so precisely, but none the less we think that it might have been. This type concern is wholly reasonable, and in fact it is artificial intelligence (in particular generative adversarial networks (GANs) that are starting to be the culprits for these incredibly ‘real’ fakes. This can quite quickly become dangerous (and already is). Consider the court room. What if you can’t trust body camera footage or crime scene photography because its just to easy to create fake footage with AI systems. But you don’t even have to go to the court room, or even outside your house to be worried about this type of deep fake. Because if the hype around fake news wasn’t enough already, imagine all the fake scandals and he said she said fake videos. (Wait is this fake news too‼?! Nah don’t worry about it, this is just some random blog post, I don’t have the time or effort to come up with fake stuff.)</p>
-            <p>Moving on to another buzz word topic: discrimination (as if this whole post wasn’t just buzz word galore already). One of the primary tasks of AI systems right now is classification. AI is very good at answering questions like “what type of animal is this” or “how much money will this house sell for”, or “what is the probability that this person on trial is guilty” or “which candidate should I hire to most improve my business” which all fall under either continuous or discrete classification problems. The way these AI systems come up with their answers is by first training on example cases. Now one problem is that if the examples that are being used for training are already discriminatory (say that in the data used for training black men on trial were found guilty 30% more than white men) then the AI system is probably going to predict similar statistics going forward. Even if race is not explicitly a model of the system, other things will be such as the persons zipcode, income, or employment which correlate with race. We could just  mandate that equal number of colored and non-colored, female and male, and so on all get equally proportioned outcomes in the end. But that seems clearly problematic as well. What if we’ve hired 550 white guys and 530 black guys this year. Does that mean the next white guy we interview we have to reject? What if were really sure he would be a great asset for our business, well then maybe we hire him too, but then were at 551 white guys and 530 black guys, so the next white guy we really have to reject. This issue I don’t think is one particularly unique to AI systems, and the solution here is really to decide as a society what our preferences and values are.</p>
-            <p>Let’s go back to a less dangerous topic (or maybe more dangerous, it depends on your perspective I suppose). Another threat AI poses which goes a bit along the line of existential risk is that of social and market manipulation. It seems plausible that an artificial intelligence which is so incredibly beyond what we could imagine, probably won’t have super strength, or massive military force at its disposal, and might not be able to hack into offline, triply redundant systems like U.S. nuclear launch sites. What does seem plausible is that with the super intelligence the AI does have, it will be able to foresee events that no one else can. After all that’s what AI is being designed for – prediction. With these incredible predictive powers, and some capacity to interact with the world, the AI could set up chains of events with precise calculation to manipulate complex systems such as financial institutions, international relations, or even biological systems. Of course going back to the first concern on AGI, condition (1) must be met already, where the values of the agent are unaligned with out values for this type capacity of predictive manipulation to be a concern instead of sublime endowment.</p>
-            <p>There are many more threats and challenges of AI that I've mentioned, many that I did not have time to mention, and many more that I've simply overlooked (hey I’m not the superintelligence here). As I said at the beginning, it is my belief that to really understand these threats, how realistic they are, and how dangerous they are, what we need is formal systems, rigorous mathematics, and careful analysis. So I better get back to it!</p>
-
-
-
-
-
-            <hr>
-
-            <!-- Comments Form -->
-            <div class="card my-4">
-                <h5 class="card-header">Leave a Comment (it first will be emailed to Patrick for approval):</h5>
-                <div class="card-body">
-                    <form>
-                        <div class="form-group">
-                            <label>
-                                <textarea class="form-control" rows="4" cols="80"></textarea>
-                            </label>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Patrick Phillips</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Papers.html">Papers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../project-portfolio.html">Project Portfolio</a>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="../Philosophy-Blog.html">Philosophy Blog</a>
+                            <a class="dropdown-item active" href="../Personal-Blog.html">Personal Blog</a>
+                            <a class="dropdown-item" href="Blogpost__welcome__.html">Welcome to the Blog!</a>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOtherPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Other Pages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="../button.html">button</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
+    <!-- Page Content -->
+    <div class="container">
 
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">AI Safety
+            <small>by Patrick Phillips</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="../Personal-Blog.html">Personal Blog</a>
+            </li>
+            <li class="breadcrumb-item active">
+                AI Safety
+            </li>
+        </ol>
+
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Preview Image -->
+                <img class="img-fluid rounded" src="../images/artificial-intelligence-nonsense.png" alt="">
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p>Posted on February 4, 2019</p>
+
+                <hr>
+                <!-- Post Content -->
+
+                <p class="lead">There are many pressing concerns in AI safety. Some concerns are more reasonable than others. Some concerns are more of an existential threat than others. None have easy answers (if they did, well we wouldn’t be concerned would we?).</p>
+                <p>This article will explore a laundry list of these concerns. I won’t suggest many solutions, and if I do, none of these solutions will be by any means complete. For the most part, it is my opinion that to solve these dilemmas we need to do more research, and in particular, rigorously theoretical research that focuses on bounds for the likelihood of catastrophic outcomes.. Here we go!</p>
+
+                <p>Existential risk in this context is the vague theory that an artificial general intelligence (AGI)
+                    could become powerful enough and misguided enough to result in human extinction.
+                    Here is one plausible set of steps for this type of threat to become reality:</p>
+                <blockquote class="blockquote">
+                    <p class="mb-0">(1) the AGI develops values that stand opposed to the human race, and <br> (2) the AGI has the power and capacity to act on these values, overcoming any human intervention.
+                    </p>
+                </blockquote>
+                <p>The first condition (1) seems plausible. It may be difficult to instill prescribed values into AGI systems (though giving objectives/values seems trivial in most cases), or more likely, malicious actors may choose to intentionally gives values to AGI systems that are not in line with the interest of society at large. The second condition (2) seems less likely to be realized, though also plausible. One particular concern here is that of recursive intelligence growth. Consider an AGI agent that is able to control its own intelligence or create new intelligent agents. If we humans are able to build an agent more intelligent than ourselves, than it would seem logical or at least possible that this agent would be able to build another agent even more intelligent than itself. A chain of intelligent agents, each a little bit more powerful than its predecessor could be created in this recursive manner. If these incredibly intelligent agents also had values not aligned with ours, and the ability to act in the world without constraint, there may be real existential risk. And it’s worth noting that even if these outcomes are unlikely, as long as there is any reasonable chance that they could manifest themselves, we probably ought to take them seriously (since the outcome could be so infinitely bad).</p>
+                <p>Besides existential risk, there are many more immediate challenges and threats posed by artificial intelligence including deep fakes, autonomous weapons, social manipulation, systematic discrimination, and AI transparency. Not all of these challenges will be discussed here. The first one of these that I do think is worth discussing is AI transparency. There are at least two distinct transparency problems that AI faces. As Mind AI puts it: “The first deals with public perception and understanding of how AI works, and the second has to do with how much developers actually understand about their own AI” [1]. In regards to the first issue, of course the public will not entirely have the time or means to learn how AI works, and it should certainly not be their responsibility to do so. </p>
+                <p>This leaves a real dilemma. AI is going to make some of the most significant societal decisions on topics ranging from legal responsibility to medical diagnoses to running yellow lights. If the general public is unable to understand how these decisions are made then how can they be expected to trust them? Especially when these systems might make decisions that seem incorrect, discriminatory, or have immediate negative consequences, it seems almost impossible to trust them if we cannot understand why they are making the decisions that they do. This problem of public understanding and perception could be solved to some extent if AI developers were at least able to explain the fundamental question of why AI agents make the decisions that they do. </p>
+                <p>The state of the art in AI right now is ‘deep learning’ which consists of massive neural networks that are much the opposite of transparent. It seems like the best way to understand what causes a neural network to make a decision is to try varying the input and see how the output varies. This is really the last resort to understand any sort of black box algorithm (though its not a black box algorithm at all, really just some multivariate calculus which is the most confusing part; how could we not understand something we have defined so precisely?) I think there are many different approaches to overcoming this transparency issue. The most easy one, and I think perhaps the best, is just to get better at living with uncertainty. Another possible solution is to abandon neural nets (fat chance, they’re the best we got) for some other more transparent machine learning algorithms. I do also think there is some potential for really just getting better at understanding what the neural network is doing. What this might look like technically is viewing neural nets as doing causal inference (like in a probabilistic graphical model) which is a much more transparent process whereby you can directly identify which particular things caused which other particular things and to what extent.</p>
+                <p>The next threat that I will discuss is that of deep fakes. Already when your browsing through Facebook or YouTube or a friend sends you an image or video with something truly remarkable, there is a sort of skepticism that we get (or at least I do). Maybe we’re not always sure how a video or photo could be faked so precisely, but none the less we think that it might have been. This type concern is wholly reasonable, and in fact it is artificial intelligence (in particular generative adversarial networks (GANs) that are starting to be the culprits for these incredibly ‘real’ fakes. This can quite quickly become dangerous (and already is). Consider the court room. What if you can’t trust body camera footage or crime scene photography because its just to easy to create fake footage with AI systems. But you don’t even have to go to the court room, or even outside your house to be worried about this type of deep fake. Because if the hype around fake news wasn’t enough already, imagine all the fake scandals and he said she said fake videos. (Wait is this fake news too‼?! Nah don’t worry about it, this is just some random blog post, I don’t have the time or effort to come up with fake stuff.)</p>
+                <p>Moving on to another buzz word topic: discrimination (as if this whole post wasn’t just buzz word galore already). One of the primary tasks of AI systems right now is classification. AI is very good at answering questions like “what type of animal is this” or “how much money will this house sell for”, or “what is the probability that this person on trial is guilty” or “which candidate should I hire to most improve my business” which all fall under either continuous or discrete classification problems. The way these AI systems come up with their answers is by first training on example cases. Now one problem is that if the examples that are being used for training are already discriminatory (say that in the data used for training black men on trial were found guilty 30% more than white men) then the AI system is probably going to predict similar statistics going forward. Even if race is not explicitly a model of the system, other things will be such as the persons zipcode, income, or employment which correlate with race. We could just mandate that equal number of colored and non-colored, female and male, and so on all get equally proportioned outcomes in the end. But that seems clearly problematic as well. What if we’ve hired 550 white guys and 530 black guys this year. Does that mean the next white guy we interview we have to reject? What if were really sure he would be a great asset for our business, well then maybe we hire him too, but then were at 551 white guys and 530 black guys, so the next white guy we really have to reject. This issue I don’t think is one particularly unique to AI systems, and the solution here is really to decide as a society what our preferences and values are.</p>
+                <p>Let’s go back to a less dangerous topic (or maybe more dangerous, it depends on your perspective I suppose). Another threat AI poses which goes a bit along the line of existential risk is that of social and market manipulation. It seems plausible that an artificial intelligence which is so incredibly beyond what we could imagine, probably won’t have super strength, or massive military force at its disposal, and might not be able to hack into offline, triply redundant systems like U.S. nuclear launch sites. What does seem plausible is that with the super intelligence the AI does have, it will be able to foresee events that no one else can. After all that’s what AI is being designed for – prediction. With these incredible predictive powers, and some capacity to interact with the world, the AI could set up chains of events with precise calculation to manipulate complex systems such as financial institutions, international relations, or even biological systems. Of course going back to the first concern on AGI, condition (1) must be met already, where the values of the agent are unaligned with out values for this type capacity of predictive manipulation to be a concern instead of sublime endowment.</p>
+                <p>There are many more threats and challenges of AI that I've mentioned, many that I did not have time to mention, and many more that I've simply overlooked (hey I’m not the superintelligence here). As I said at the beginning, it is my belief that to really understand these threats, how realistic they are, and how dangerous they are, what we need is formal systems, rigorous mathematics, and careful analysis. So I better get back to it!</p>
+
+
+
+
+
+                <hr>
+
+                <!-- Comments Form -->
+                <div class="card my-4">
+                    <h5 class="card-header">Leave a Comment (it first will be emailed to Patrick for approval):</h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>
+                                    <textarea class="form-control" rows="4" cols="80"></textarea>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+
+            </div>
 
         </div>
+        <!-- /.row -->
 
-    </div>
-    <!-- /.row -->
-
-</div>
-<!-- /.container -->
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Patrick-Phillips-2019</p>
     </div>
     <!-- /.container -->
-</footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Patrick-Phillips-2025</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
